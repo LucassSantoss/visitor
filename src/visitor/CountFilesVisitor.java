@@ -19,6 +19,10 @@ public class CountFilesVisitor implements Visitor{
         }
     }
 
+    public void resetCount() {
+        countFiles = 0;
+    }
+
     public int getCountFiles() {
         return countFiles;
     }

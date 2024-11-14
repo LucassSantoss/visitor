@@ -19,5 +19,17 @@ public class FileManager {
         CountFilesVisitor countFilesVisitor = new CountFilesVisitor();
         root.accept(countFilesVisitor);
         System.out.println("Quantity of files: " + countFilesVisitor.getCountFiles());
+
+        System.out.println("--------------------------------------------------");
+        System.out.println("Adding a new file with size = 5");
+        root.add(new File(5));
+
+        fullSizeVisitor.resetFullSize();
+        root.accept(fullSizeVisitor);
+        System.out.println("Full size: " + fullSizeVisitor.getFullSize());
+
+        countFilesVisitor.resetCount();
+        root.accept(countFilesVisitor);
+        System.out.println("Quantity of files: " + countFilesVisitor.getCountFiles());
     }
 }

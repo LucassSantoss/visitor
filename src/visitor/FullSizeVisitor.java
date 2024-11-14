@@ -19,6 +19,10 @@ public class FullSizeVisitor implements Visitor{
         }
     }
 
+    public void resetFullSize() {
+        fullSize = 0;
+    }
+
     public int getFullSize(){
         return fullSize;
     }
