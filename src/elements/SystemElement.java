@@ -2,6 +2,6 @@ package elements;
 
 import visitor.Visitor;
 
-public interface systemElement {
+public interface SystemElement {
     void accept(Visitor visitor);
 }
