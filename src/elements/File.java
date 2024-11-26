@@ -13,6 +13,7 @@ public class File implements SystemElement {
         return size;
     }
 
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
